@@ -9,6 +9,18 @@ wp_nav_menu(
         'menu_class' => 'menu-list list-inline'
     )
 );
+
+$query = new WP_Query( 'category_name = categoria-politica' );
+/* echo "<pre>";
+print_r($query);
+echo "</pre>"; */  
+$i = 0;
+if ( $query->have_posts() ) : while ( $query->have_posts()) : $query->the_post(); 
+
+the_category();
+$i++;
+endwhile;
+endif;
 ?>
 
 <ul class="nav">
