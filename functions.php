@@ -8,27 +8,71 @@
 
 function register_styles()
 {  
+    
 
     /*Bootstrap */
     wp_register_style('style_bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css', array(), time());
-    wp_enqueue_style('style_bootstrap');
+    
 
     wp_register_script('script_bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), time());
-    wp_enqueue_script('script_bootstrap');
+    
+
+    /* Libreria de JQuery */
+
+    wp_register_style('style_jquery', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css', array(), time());
+    
+
+    wp_register_script('script_jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js', array() , time());
+    
 
     /* slick carousel*/
     wp_register_style('style_carousel', get_template_directory_uri().'/library/css/slick-theme.css', array(), time());
-    wp_enqueue_style('style_carousel');
+    
 
     wp_register_style('style_carousel_css', get_template_directory_uri().'/library/css/slick.css', array(), time());
-    wp_enqueue_style('style_carousel_css');
+    
 
-    wp_register_script('script_carousel', get_template_directory_uri().'/library/js/slick.js', ['jquery'] , time());
-    wp_enqueue_script('script_carousel');
+    wp_register_script('script_carousel', get_template_directory_uri().'/library/js/slick.min.js', ['jquery'] , time());
+    
 
     /* documentos tipo js*/
     wp_register_script('documents_js', get_template_directory_uri().'/library/js/carousel/slider.js', ['jquery', 'script_carousel'] , time());
-    wp_enqueue_script('documents_js');  
+
+    wp_register_script('menu_js', get_template_directory_uri().'/library/js/menu.js', ['jquery'] , time());
+    
+
+
+    /*Hojas de Estilos */
+    wp_register_style('style_slider', get_template_directory_uri().'/library/css/slider.css', array(), time());
+    wp_register_style('style_nav', get_template_directory_uri().'/library/css/nav.css', array(), time());
+    
+
+    /* encolar style */
+    wp_enqueue_style('style_jquery');
+
+    wp_enqueue_style('style_carousel');
+
+    wp_enqueue_style('style_carousel_css');
+
+    wp_enqueue_style('style_bootstrap');
+
+    wp_enqueue_style('style_slider');
+    wp_enqueue_style('style_nav');
+
+
+    /* encolar scripts */
+
+    wp_enqueue_script('script_jquery');
+
+    wp_enqueue_script('script_carousel');
+
+    wp_enqueue_script('script_bootstrap');
+
+    wp_enqueue_script('documents_js');
+
+    wp_enqueue_script('menu_js');
+
+    
 
 
 }
@@ -49,7 +93,7 @@ register_nav_menus(
 
 /** añadir clases a los menus de wordpress */
 
-function urbano_menu_class($classes, $item, $args)
+/* function urbano_menu_class($classes, $item, $args)
 {
     if($args-> theme_location == 'top')
     {
@@ -58,10 +102,10 @@ function urbano_menu_class($classes, $item, $args)
     return $classes;
 }
 
-add_filter('nav_menu_css_class', 'urbano_menu_class',1,3);
+add_filter('nav_menu_css_class', 'urbano_menu_class',1,3); */
 
 /** agregar nuevo elemento al menu de wordpress */
-add_filter('wp_nav_menu_items','menuProgrammatically', 10, 2);
+/* add_filter('wp_nav_menu_items','menuProgrammatically', 10, 2);
 function menuProgrammatically($item, $args)
 {
     if($args->theme_location == 'top')
@@ -70,7 +114,7 @@ function menuProgrammatically($item, $args)
 
         return $item.$firstMenuItem;
     }
-}
+} */
 
 
 /*Traer todos los post de un slug  */

@@ -25,12 +25,54 @@ endif;
 
 $categories = get_categories();
 
-for($i = 0; $i < sizeof($categories); $i++ ):
-  $post =  get_post_id_by_name($categories[$i]->slug);
+
 ?>
-  <div class="yor-class px-3">
-    <div class="card">
-      <?php
+  <div class="posts-carousel multiple-items " style="display: flex;">
+    <?php
+    for($i = 0; $i < sizeof($categories); $i++ ):
+      $post =  get_post_id_by_name($categories[$i]->slug);
+    ?>
+      <div class="wrapper">
+        <div class="container">
+          <img class="top" src="http://localhost/urbano/wp-content/uploads/2022/01/html5.jpg" alt="">
+          <div class="bottom">
+            <div class="left">
+              <div class="details">
+                <h2 class="txt_products">Name</h2>
+                <p>sub Name</p>
+              </div>
+              <div class="buy">
+                <a href="">
+                  <i class="fas fa-cart-plus"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inside">
+          <div class="icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="icontents">
+            <h1>Name</h1>
+            <p>Descriptions</p>
+          </div>
+        </div>    
+      </div>
+      
+
+
+<?php
+    endfor;
+
+
+?>
+  </div>
+
+
+
+
+<?php
         if(has_post_thumbnail()):
           the_post_custom_thumbnail(
             get_the_ID(),
@@ -46,22 +88,3 @@ for($i = 0; $i < sizeof($categories); $i++ ):
         <?php  
         endif;
         ?>
-    </div>
-
-  </div>
-<?php
-endfor;
-
-
-?>
-
-<div class="posts-carousel">
-  <div><h3>1</h3></div>
-  <div><h3>2</h3></div>
-  <div><h3>3</h3></div>
-  <div><h3>4</h3></div>
-  <div><h3>5</h3></div>
-  <div><h3>6</h3></div>
-</div>
-
-

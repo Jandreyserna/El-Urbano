@@ -1,12 +1,6 @@
-(function($) {
-    class SlickCarousel{
-        constructor() {
-            this.initiateCarousel();
-        }
-        initiateCarousel() {
-            console.log('hell');
-            $(".posts-carousel").slick();
-        }
-    }
-new SlickCarousel();
-})(jQuery)
+	
+      $('.posts-carousel').Slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
