@@ -9,21 +9,21 @@
 </head>
 <body>
     <header>
-    <div class="menu_bar">
-        <a href="#" class="bt-menu"><span class="dashicons dashicons-menu"></span> Menu</a>
-    </div>
-    <nav>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="dashicons dashicons-menu"></span> Menu</a>
+        </div>
+        <nav>
 <?php 
-    wp_nav_menu(
-        array(
-           'theme_location' => 'top',
-           'container' => 'nav', 
-           'container_class' => 'container',
-            'menu_class' => 'menu-list list-inline'
-        )
-    );
+            wp_nav_menu(
+                array(
+                'theme_location' => 'top',
+                'container' => 'nav', 
+                'container_class' => 'container',
+                    'menu_class' => 'menu-list list-inline'
+                )
+            );
 ?>
-    </nav>
+        </nav>
     </header>  
 
     

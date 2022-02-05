@@ -28,10 +28,6 @@ $categories = get_categories();
 
 ?>
   <div class="posts-carousel multiple-items " style="display: flex;">
-    <?php
-    for($i = 0; $i < sizeof($categories); $i++ ):
-      $post =  get_post_id_by_name($categories[$i]->slug);
-    ?>
       <div class="wrapper">
         <div class="container">
           <img class="top" src="http://localhost/urbano/wp-content/uploads/2022/01/html5.jpg" alt="">
@@ -60,13 +56,6 @@ $categories = get_categories();
         </div>    
       </div>
       
-
-
-<?php
-    endfor;
-
-
-?>
   </div>
 
 

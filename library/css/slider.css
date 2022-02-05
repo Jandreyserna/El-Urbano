@@ -28,6 +28,10 @@
     height: 92vh;
 }
 
+/* .primer {
+    z-index: -1;
+} */
+
 .wrapper{
     width: 450px;
     height: 500px;
@@ -66,7 +70,7 @@
 .wrapper .container .bottom .left{
     height: 100%;
     width: 100%;
-    background: #f4f4f4;
+    background: #fcfcfc;
     position: relative;
     float: left;
 }
@@ -84,25 +88,25 @@
 .wrapper .container .bottom .left .buy {
     float: right;
     height: 100%;
-    background: #f1f1f1;
+    background: #fcfcfc;
     transition: background 0.5s;
     border-left: solid thin rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .container .bottom .left .buy i{
+.wrapper .container .bottom .left .buy span{
     font-size: 30px;
     padding: 30px;
-    color: #0781b6;
+    color: #bf5eff;
     transition: transform 0.5s;
 }
 
-.wrapper .container .bottom .left .buy:hover i{
+.wrapper .container .bottom .left .buy:hover span{
     transform: rotate(360deg);
 }
 
 .wrapper .inside{
     z-index: 9;
-    background: #0781b6;
+    background: #bf70ff;
     width: 140px;
     height: 140px;
     position: absolute;
