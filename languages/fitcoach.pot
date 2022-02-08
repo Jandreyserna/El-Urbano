@@ -1,0 +1,748 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Text in function
+#: fitcoach/content-search.php:51
+msgid "% Comments"
+msgstr ""
+
+#. Text in function
+#: fitcoach/comments.php:53
+msgid "&larr; Older Comments"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:29
+#: fitcoach/content-class.php:36
+#: fitcoach/content-search.php:39
+msgid ", "
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-search.php:51
+msgid "1 Comment"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/template-tags.php:25
+msgid "<span class=\"meta-nav\"><i class=\"fa fa-angle-left\"></i></span> Older posts"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "About ModernThemes"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "About Us"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Access to New Themes"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/inc/use-child-theme.php:81
+msgid "Activate now"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Agency Designed Themes"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Archives"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Asides"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Audios"
+msgstr ""
+
+#. Text in function
+#: fitcoach/archive.php:20
+msgid "Author: %s"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Blog Title"
+msgstr ""
+
+#. Text in function
+#: fitcoach/page-home.php:87
+msgid "Book a Class"
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Book a Class Form"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:29
+#: fitcoach/content-class.php:36
+msgid "Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Call-to-action button text"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Call-to-action display text"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Change the width of the Logo in PX."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Chats"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Check out our <a href=\"http://modernthemes.net/documentation/\">ModernThemes documentation</a> to learn how to use fitcoach and all the rest of our themes. "
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Choose your excerpt length here. Default: 30 words"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Class Currency"
+msgstr ""
+
+#. Text in function
+#: fitcoach/single-classes.php:23
+msgid "Class Details"
+msgstr ""
+
+#. Text in function
+#: fitcoach/single-classes.php:23
+msgid "Class Location"
+msgstr ""
+
+#. Text in function
+#: fitcoach/single-classes.php:23
+msgid "Class Overview"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Classes"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/comments.php:52
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#. Text in function
+#: fitcoach/content.php:24
+#: fitcoach/content-home.php:26
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/my-custom-css.php:153
+msgid "Custom CSS"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/inc/my-custom-css.php:141
+msgid "Custom CSS Panel"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Customize your classes page"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Customize your footer area. Choose from any of <a href=\"http://fortawesome.github.io/Font-Awesome/cheatsheet/\" target=\"_blank\">these icons</a>. Example: \"fa-mobile\""
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-form-widget.php:192
+msgid "Description:"
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-info.php:1
+msgid "Display your contact info"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Documentation"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:62
+#: fitcoach/content-class.php:69
+#: fitcoach/content-page.php:25
+#: fitcoach/content-search.php:54
+#: fitcoach/content-home.php:44
+msgid "Edit"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-info.php:61
+msgid "Enter your address"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-info.php:73
+msgid "Enter your email address"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-info.php:67
+msgid "Enter your phone number"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Excerpt length"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "First Footer Icon"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer Address"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer Background Color"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer Byline Text"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer Contact Email"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer Logo"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer Phone Number"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Footer background"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Front Page Call-to-Action URL"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Galleries"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Get Premium Membership"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Google Fonts"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Home Page"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Hover Color"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Images"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#. Text in function
+#: fitcoach/page-home.php:103
+msgid "Latest News Posts"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Layout"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-search.php:51
+msgid "Leave a comment"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Like Fit Coach? Help Us Out."
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Link Color"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Links"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Logo"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Logo and Icons"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Look as good as can be with our new premium themes. Each one is agency designed with modern styles and professional layouts."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-info.php:1
+msgid "MT: Contact Info Widget"
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/video-widget.php:1
+msgid "MT: Video Widget"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Membership Options"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/header.php:60
+msgid "Menu"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/page-classes.php:46
+msgid "More Details"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/my-custom-css.php:153
+msgid "My Custom CSS Panel"
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:163
+msgid "New Description"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "New themes added monthly! When you purchase a premium membership you get access to all premium themes, with new themes added monthly."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:163
+msgid "New title"
+msgstr ""
+
+#. Text in function
+#: fitcoach/comments.php:54
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/template-tags.php:29
+msgid "Newer posts <span class=\"meta-nav\"><i class=\"fa fa-angle-right\"></i></span>"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/content-none.php:16
+msgid "Nothing Found"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Only enter numeric value"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:29
+#: fitcoach/content-class.php:36
+#: fitcoach/single-classes.php:51
+#: fitcoach/content-page.php:16
+#: fitcoach/content.php:32
+#: fitcoach/content-home.php:28
+msgid "Pages:"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/video-widget.php:57
+msgid "Paste the URL of the video (only from a network that supports oEmbed, like Youtube, Vimeo etc.):"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/inc/my-custom-css.php:144
+msgid "Place your custom CSS code here:"
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Please enter a message."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Please enter the class name."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Please enter the date of the class."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Please enter your email address."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Please enter your name."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Please enter your phone number."
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Please help support our mission and continued development of free themes with a donation of $5, $10, $20, or more!"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/use-child-theme.php:80
+msgid "Please use a %s child theme to make changes"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Plugin Compatibility"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Post content"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/inc/template-tags.php:52
+msgid "Post navigation"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-search.php:35
+msgid "Posted in %1$s"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/inc/template-tags.php:21
+msgid "Posts navigation"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Premium Membership. Premium Experience."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Quotes"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Read Docs"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content.php:41
+#: fitcoach/content-home.php:40
+msgid "Read More"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-none.php:22
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/inc/my-custom-css.php:144
+#: fitcoach/inc/my-custom-css.php:148
+msgid "Save"
+msgstr ""
+
+#. Text in function
+#: fitcoach/search.php:17
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Second Footer Icon"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Select your desired font for the body. Oswald is the default Body font."
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Select your desired font for the headings. Oswald is the default Heading font."
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/my-custom-css.php:153
+msgid "Settings"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Site Title Color"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/header.php:41
+msgid "Skip to content"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-form-widget.php:106
+msgid "Sorry, an error occured."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/content-none.php:26
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Statuses"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/my-custom-css.php:153
+msgid "Support"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-search.php:45
+msgid "Tagged %1$s"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Thank you for using ModernThemes!"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-form-widget.php:102
+msgid "Thanks, your email was sent successfully."
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Theme Color"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Theme Hover Color"
+msgstr ""
+
+#. Text in function
+#: fitcoach/footer.php:88
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Third Footer Icon"
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:29
+#: fitcoach/content-class.php:36
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:29
+#: fitcoach/content-class.php:36
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in function
+#: fitcoach/content-single.php:29
+#: fitcoach/content-class.php:36
+msgid "This entry was tagged %2$s. Bookmark the <a href=\"%3$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-info.php:53
+#: fitcoach/widgets/video-widget.php:49
+msgid "Title"
+msgstr ""
+
+#. Text in echo
+#: fitcoach/widgets/contact-form-widget.php:189
+msgid "Title:"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Upcoming Class Title"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Upload your Apple Touch Icon (114x114 pixels)"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Upload your Apple Touch Icon (144x144 pixels)"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Upload your Apple Touch Icon (57x57 pixels)"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Upload your Apple Touch Icon (72x72 pixels)"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Upload your favicon (16x16 pixels)"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Use our new free plugins with this theme to add functionality for things like projects, clients, team members and more. Compatible with all premium themes!"
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/contact-form-widget.php:1
+msgid "Use this widget to place a Book a Class form in your sidebar."
+msgstr ""
+
+#. Text in function
+#: fitcoach/widgets/video-widget.php:1
+msgid "Video for your sidebar."
+msgstr ""
+
+#. Text in echo
+#: fitcoach/archive.php:20
+msgid "Videos"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Want more WordPress themes or support and customization? We can probably help you out at <a href=\"http://modernthemes.net/\" target=\"_blank\">modernthemes.net</a>."
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "Want to Give Back?"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "We do all we can do to make all our themes free for you. While we enjoy it, and it makes us happy to help out, a little appreciation can help us to keep theming.</strong><br/><br/> Please help support our mission and continued development with a donation of $5, $10, $20, or if you are feeling really kind $100..<br/><br/> <a href=\"https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7LMGYAZW9C5GE\" target=\"_blank\" rel=\"nofollow\"><img class=\"\" src=\"https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif\" alt=\"Make a donation to ModernThemes\" /></a>"
+msgstr ""
+
+#. Text in function
+#: fitcoach/panel/theme-admin_page.php:1
+msgid "We have options to fit every budget. Choose between a single theme, or access to all current and future themes for a year, or forever!"
+msgstr ""
+
+#. Text in function
+#: fitcoach/inc/customizer.php:17
+msgid "Your call-to-action background"
+msgstr ""
