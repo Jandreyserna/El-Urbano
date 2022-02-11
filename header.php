@@ -43,9 +43,12 @@
 		<header id="masthead" class="site-header" role="banner">
     		<div class="grid side-pad header-overflow">
 				<div class="site-branding col-3-12 mobile-col-2-3">
-        		<?php if ( get_theme_mod( 'fitcoach_logo' ) ) : ?> 
-    				<div class="site-logo"> 
-       					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mods( 'fitcoach_logo' ) ); ?>' <?php if ( get_theme_mod( 'logo_size' ) ) : ?>width="<?php echo esc_attr( get_theme_mod( 'logo_size' )); ?>"<?php endif; ?> alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>  
+				<!-- Cargango imagen de logo -->
+        		<?php 
+				$url_image = get_theme_mods( 'fitcoach_logo' );
+				if ( get_theme_mods( 'fitcoach_logo' ) ) : ?> 
+    				<div class="site-logo top-0 end-0"> 
+       					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?= $url_image['apple_touch_57'] ?>' <?php if ( get_theme_mod( 'logo_size' ) ) : ?>width="250px" height="100px"<?php endif; ?> alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>  
     				</div>
 				<?php else : ?> 
     				<hgroup> 
@@ -69,7 +72,7 @@
         
         	</div><!-- grid --> 
 		</header><!-- #masthead -->
-		<?php echo "<pre>";
-		print_r( get_theme_mods( 'fitcoach_logo' ) );
-		echo "</pre>";?>
+		<?php
+		?>
+		<img src="<?=$custom_logo_id['apple_touch_144']?>" alt="">
 	<section id="content" class="site-content"> 

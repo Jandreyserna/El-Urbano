@@ -16,6 +16,9 @@ $MyThemeUpdateChecker = new ThemeUpdateChecker(
 );
 
 
+
+
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -84,6 +87,8 @@ function fitcoach_setup() {
 }
 endif; // fitcoach_setup
 add_action( 'after_setup_theme', 'fitcoach_setup' );
+
+
 
 /**
  * Load Google Fonts.
@@ -180,6 +185,16 @@ function fitcoach_scripts() {
 	wp_enqueue_script( 'fitcoach-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), false, true);
 	wp_enqueue_script( 'fitcoach-verify', get_template_directory_uri() . '/js/verify.js', array('jquery'), false, true); 
 	wp_enqueue_script( 'fitcoach-scripts', get_template_directory_uri() . '/js/fitcoach.scripts.js', array(), false, true );
+
+	/**
+ 	* Registrar funciones de style y scripts
+ 	*/
+
+	wp_register_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' );
+    wp_enqueue_style( 'bootstrap-css' );
+
+	wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), time(), true);
+	wp_enqueue_script('bootstrap-js');
    
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -461,3 +476,5 @@ function be_initialize_cmb_meta_boxes() {
         require_once( 'cmb/init.php' );
     }
 }
+
+
