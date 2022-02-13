@@ -7,7 +7,6 @@
  * @package fitcoach
  */
 ?>
-
 	<div class="grid grid-pad">
 		<div class="col-1-1">
 			<section class="no-results not-found">

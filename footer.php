@@ -85,7 +85,7 @@
         	<?php if ( get_theme_mod( 'fitcoach_footerid' ) ) : ?>
         			<?php echo wp_kses_post( get_theme_mod( 'fitcoach_footerid' )); ?>  
 				<?php else : ?>  
-    				<?php printf( __( 'Theme: %1$s by %2$s', 'fitcoach' ), 'fitcoach', '<a href="http://modernthemes.net" rel="designer">modernthemes.net</a>' ); ?>
+    				<?php /* printf( __( 'Theme: %1$s by %2$s', 'fitcoach' ), 'fitcoach', '<a href="http://modernthemes.net" rel="designer">modernthemes.net</a>' ); */ ?>
 			<?php endif; ?> 
 
 		</div><!-- .site-info -->
