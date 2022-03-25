@@ -7,22 +7,26 @@
  * @package fitcoach
  */
 ?>
-
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-
-			<?php if ( 'post' == get_post_type() ) : ?>
-			<div class="entry-meta">
-				<?php fitcoach_posted_on(); ?>
-			</div><!-- .entry-meta -->
-			<?php endif; ?>
-		</header><!-- .entry-header -->
+	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
+		<?php 
+		echo "<pre>";
+		echo "<pre>";
+		echo "</pre>";
+		echo "</pre>";
+		
+		?>
+		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+		<?php the_post_thumbnail();?>
+		<?php if ( 'post' == get_post_type() ) : ?>
+		<div class="entry-meta">
+			<?php fitcoach_posted_on(); ?>
+		</div><!-- .entry-meta -->
+		<?php endif; ?>
 
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-
+	</div>
 		<footer class="entry-footer">
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 				<?php
@@ -53,4 +57,3 @@
 
 			<?php edit_post_link( __( 'Edit', 'fitcoach' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-footer -->
-	</article><!-- #post-## -->  

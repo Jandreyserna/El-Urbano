@@ -3,18 +3,9 @@
  * @package fitcoach
  */
 ?>
-<h1>hellooooooooooooooooooooooooooooooooooo content-single</h1>
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header fc-single-header">
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-			<div class="entry-meta">
-				<?php fitcoach_posted_on(); ?>
-			</div><!-- .entry-meta -->
-        
-    		<?php the_post_thumbnail('large', array('class' => 'fc-post-image')); ?>
-		</header><!-- .entry-header -->
-
+	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_post_thumbnail('large', array('class' => 'fc-post-image')); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php
@@ -25,6 +16,8 @@
 			?>
 		</div><!-- .entry-content -->
 
+	</div>
+	
 		<footer class="entry-footer">
 			<?php
 				/* translators: used between list items, there is a space after the comma */
@@ -36,17 +29,17 @@
 				if ( ! fitcoach_categorized_blog() ) {
 					// This blog only has 1 category so we just need to worry about tags in the meta text
 					if ( '' != $tag_list ) {
-						$meta_text = __( 'This entry was tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
+						$meta_text = __( 'Esta entrada fue etiquetada %2$s. Marca el <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
 					} else {
-						$meta_text = __( 'Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
+						$meta_text = __( 'Marca el <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
 					}
 
 				} else {
 				// But this blog has loads of categories so we should probably display them here
 					if ( '' != $tag_list ) {
-						$meta_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
+						$meta_text = __( 'Esta entrada fue publicada en  %1$s y Etiquetada %2$s. Marca el <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
 					} else {
-						$meta_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
+						$meta_text = __( 'Esta entrada fue publicada como %1$s. Marca el <a href="%3$s" rel="bookmark">permalink</a>.', 'fitcoach' );
 					}
 
 				} // end check for categories on this blog
@@ -61,4 +54,3 @@
 
 			<?php edit_post_link( __( 'Edit', 'fitcoach' ), '<span class="edit-link">', '</span>' ); ?>
 		</footer><!-- .entry-footer -->  
-	</article><!-- #post-## -->

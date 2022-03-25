@@ -41,7 +41,7 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 
 </head> 
 <header>
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark " style="background:#9F46EE;">
 		
 		<div class="contenedor-menu " >
 			<p class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></p>	

@@ -10,7 +10,7 @@
 get_header(); ?>
 	
     <div class="grid grid-pad page-area">
-	<h1>hellooooooooooooooooooooooooooooooooooo archive.php</h1>
+	<!-- <h1>hellooooooooooooooooooooooooooooooooooo archive.php</h1> -->
 		<section id="primary" class="content-area page-wrapper archive-wrapper col-9-12 custom_border_top">
 			<main id="main" class="site-main" role="main">
 
