@@ -8,7 +8,7 @@
 get_header(); ?>
 
 	<div class="grid grid-pad class-page-area">
-
+	<h1>hellooooooooooooooooooooooooooooooooooo page clases</h1>
 			<?php query_posts( array ( 'post_type' => 'classes', 'posts_per_page' => -1, 'order' => 'ASC' ) );
 			
 				while ( have_posts() ) : the_post(); ?>

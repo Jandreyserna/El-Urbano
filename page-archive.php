@@ -6,7 +6,7 @@ Template Name: Blog Archive
  */
 
 get_header(); ?>
-
+	<h1>hellooooooooooooooooooooooooooooooooooo page archive</h1>
 	<div class="grid grid-pad page-area">
 		<div id="primary" class="content-area page-wrapper blog-wrapper col-9-12 custom_border_top">
 			<main id="main" class="site-main" role="main">

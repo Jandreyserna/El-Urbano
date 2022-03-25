@@ -769,11 +769,17 @@ a:active {
 	height: 70px;
 }
 
+.site-title{
+	
+}
+
 .site-title, .site-title a {
+	text-decoration: none;
 	color: #fff;
 	font-size: 1.7em;
 	font-weight: 300;
-	text-transform: uppercase;
+	text-transform: uppercase;	
+	margin-top: 8px !important;
 }
 
 .schedule-title span {
@@ -1901,8 +1907,8 @@ body {
 	
 .site-title, .site-title a {
  
-  font-size: 1.25em;
-  margin-top: 25px;
+  /* font-size: 1.7em; */
+  /* margin-top: 25px; */
   
 }
 

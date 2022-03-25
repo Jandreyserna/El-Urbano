@@ -10,6 +10,7 @@
 get_header(); ?>
 	
     <div class="grid grid-pad page-area">
+	<h1>hellooooooooooooooooooooooooooooooooooo archive.php</h1>
 		<section id="primary" class="content-area page-wrapper archive-wrapper col-9-12 custom_border_top">
 			<main id="main" class="site-main" role="main">
 
@@ -86,7 +87,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'contenido', get_post_format() );
 				?>
 
 			<?php endwhile; ?>

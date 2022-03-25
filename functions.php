@@ -174,6 +174,8 @@ function fitcoach_scripts() {
     wp_enqueue_style( 'fitcoach-codemirror', get_stylesheet_directory_uri() . '/css/codemirror.css', array(), '1.0' ); 
 	}
 
+
+
 	wp_enqueue_script( 'fitcoach-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	wp_enqueue_script( 'fitcoach-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	wp_enqueue_script( 'fitcoach-slider', get_template_directory_uri() . '/js/jquery.sequence-min.js', array('jquery'), false, false );
@@ -193,8 +195,29 @@ function fitcoach_scripts() {
 	wp_register_style( 'bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' );
     wp_enqueue_style( 'bootstrap-css' );
 
+	wp_register_style('nav-style', get_template_directory_uri().'/css/nav.css', array(), time());
+	wp_enqueue_style( 'nav-style' );
+
+	wp_register_style('slider-style', get_template_directory_uri().'/css/slider.css', array(), time());
+	wp_enqueue_style( 'slider-style' );
+
 	wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), time(), true);
 	wp_enqueue_script('bootstrap-js');
+
+	/* REgistrar los style y scripts de slider */
+
+	wp_register_style( 'slick-css', get_template_directory_uri().'/css/slick-theme.css', array(), time());
+    wp_enqueue_style( 'slick-css' );
+
+	wp_register_style('slick-style', get_template_directory_uri().'/css/slick.css', array(), time());
+	wp_enqueue_style( 'slick-style' );
+
+	wp_register_script('slider-js', get_template_directory_uri().'/js/slider.js', array(), time(), true);
+	wp_enqueue_script('slider-js');
+
+	wp_register_script('slick-js', get_template_directory_uri().'/js/slider.js', array(), time(), true);
+	wp_enqueue_script('slick-js');
+
    
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

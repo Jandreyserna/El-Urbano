@@ -9,7 +9,7 @@
  
 
 get_header(); ?>
-
+<h1>hellooooooooooooooooooooooooooooooooooo page-contact</h1>
 <?php
 
 if(isset($_POST['submitted'])) {

@@ -1,0 +1,14 @@
+.slider-test{
+    margin-top: 80px;
+    margin-bottom: 80px !important;
+}
+.slider-test .card{
+    padding: 8px;
+}
+.slider-test .slick-dots li button:before{
+    font-size: 32px;
+}
+.slick-arrow:before{
+    color: #000000;
+    font-size: 25px;
+}

@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-
+	<h1>hellooooooooooooooooooooooooooooooooooo page-fullwith</h1>
 	<div class="grid grid-pad page-area">
 		<div id="primary" class="content-area page-wrapper col-1-1 custom_border_top">
 			<main id="main" class="site-main" role="main">

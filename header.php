@@ -33,46 +33,45 @@
 	<link rel="apple-touch-icon" href="<?php echo esc_url(get_theme_mod('apple_touch_57')); ?>" />
 <?php endif; ?> 
 
-<?php wp_head(); ?>
+<?php 
+wp_head(); 
+$url_image = get_theme_mods( 'fitcoach_logo' );
+?>
+
+
 </head> 
-
-<body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
-		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'fitcoach' ); ?></a>
+<header>
+	<nav class="navbar navbar-dark bg-dark">
 		
-		<header id="masthead" class="site-header" role="banner">
-    		<div class="grid side-pad header-overflow">
-				<div class="site-branding col-3-12 mobile-col-2-3">
-				<!-- Cargango imagen de logo -->
-        		<?php 
-				$url_image = get_theme_mods( 'fitcoach_logo' );
-				if ( get_theme_mods( 'fitcoach_logo' ) ) : ?> 
-    				<div class="site-logo top-0 end-0"> 
-       					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?= $url_image['apple_touch_57'] ?>' <?php if ( get_theme_mod( 'logo_size' ) ) : ?>width="250px" height="100px"<?php endif; ?> alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>  
-    				</div>
-				<?php else : ?> 
-    				<hgroup> 
-       					<h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-    				</hgroup>
-				<?php endif; ?> 
-			</div><!-- site-logo --> 
-        
+		<div class="contenedor-menu " >
+			<p class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></p>	
 
-			<div class="nav-container col-8-12 mobile-col-1-3">
-				<nav id="site-navigation" class="main-navigation" role="navigation"> 
-					<button class="menu-toggle"><?php _e( 'Menu', 'fitcoach' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>  
-				</nav><!-- #site-navigation -->
-        	</div><!-- .nav-container --> 
-         
-        
-        	<div class="social-container col-1-12 hide-on-mobile">
-        		<?php echo fitcoach_media_icons(); ?> 
-        	</div><!-- social-container --> 
-        
-        	</div><!-- grid --> 
-		</header><!-- #masthead -->
-		<?php
-		?>
-		<img src="<?=$custom_logo_id['apple_touch_144']?>" alt="">
-	<section id="content" class="site-content"> 
+			<div class="menu main-navigation">
+				
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+			</div>
+		</div>
+		<button class="menu-toggle"><?php _e( 'Menu', 'fitcoach' ); ?></button>	
+	</nav>
+</header>	
+<body>
+		<div class="vertical-center-4">
+            <div class="card">
+                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
+            </div>
+            <div class="card">
+                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
+            </div>
+            <div class="card">
+                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
+            </div>
+            <div class="card">
+                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
+            </div>
+
+        </div>
+	
+
+
+
+	
