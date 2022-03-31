@@ -28,7 +28,7 @@ header::after{
 header nav {
     width: 100%;
     z-index: 1;
-    overflow: hidden;
+    overflow: visibel;
     margin: 0 auto;
     height: 66px;
     position: fixed !important;
@@ -64,4 +64,46 @@ a:link, a:visited, a:active {
 
 .targeta{
     width: 30rem;
+}
+
+.name-post{
+    text-align: center ;
+}
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-principal-container{
+    width: 60%;
+    align-items: center;
+}
+
+.menu-principal-container ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu-principal-container ul li{
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white !important;
+}
+
+.menu-principal-container ul li:hover{
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white !important;
+}
+
+.navegator .row{
+    align-items: center;
+}
+
+.logo{
+    width: 180px;
+    height: 60px;
 }

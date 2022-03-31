@@ -41,35 +41,61 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 
 </head> 
 <header>
-	<nav class="navbar navbar-dark " style="background:#9F46EE;">
-		
-		<div class="contenedor-menu " >
-			<p class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></p>	
+	<nav class="navegator " style="background:#9F46EE;">
 
-			<div class="menu main-navigation">
+		
+			<div class="row" style="display: flex">
 				
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+					<p class='site-title' style="width: 15%" ><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></p>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+
+					<img src="<?=$url_image['apple_touch_57']?>" alt="" class="logo">
 			</div>
-		</div>
+		
+		
 		<button class="menu-toggle"><?php _e( 'Menu', 'fitcoach' ); ?></button>	
 	</nav>
 </header>	
 <body>
-		<div class="vertical-center-4">
-            <div class="card">
-                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
-            </div>
-            <div class="card">
-                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
-            </div>
-            <div class="card">
-                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
-            </div>
-            <div class="card">
-                <img src="<?= get_stylesheet_directory_uri();?> /images/cta.jpg" alt="mar bus">
-            </div>
+	<h3 class="name-post">¡Ultimas noticias!</h3>
+	<div class="sliders-show">
+		<?php
+		$categories = get_categories();
+		for($i = 0; $i < sizeof($categories); $i++ ):
+			$post =  get_post_id_by_name($categories[$i]->slug);
+		  ?>
+			
+				<div class="card card-slick" style="width: 18rem;">
+				<?php
+				  if(has_post_thumbnail()):
+					the_post_thumbnail(
+					);
+				  else:
+				?>
+					<img src="http://localhost/urbano/wp-content/uploads/2022/01/html5.jpg" class="w-100" alt="Card image cap">
+				  <?php  
+				  endif;
+				  ?>
+					<div class="card-body">
+					<?php
+						// Get the ID of a given category
+						$category_id = get_cat_ID( $categories[$i]->cat_name );
 
-        </div>
+						// Get the URL of this category
+						$category_link = get_category_link( $category_id );
+						?>
+						<h5 class="card-title"><?=the_category()?></h5>
+						<p class="card-text"><?=the_excerpt()?></p>
+						<a href="<?=$category_link?>" class="btn btn-primary">ver noticias</a>
+					</div>
+			  	</div>
+<?php		
+		  endfor;
+?>
+	</div>
+	<h3 class="name-post" >¡Ultimas noticias!</h3>
+		
 	
 
 

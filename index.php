@@ -42,4 +42,5 @@ get_header(); ?>
 
 	<?php get_sidebar(); ?>
 	</div><!-- grid -->
+	
 	<?php get_footer(); ?>

@@ -86,14 +86,56 @@
         			<?php echo wp_kses_post( get_theme_mod( 'fitcoach_footerid' )); ?>  
 				<?php else : ?>  
     				<?php /* printf( __( 'Theme: %1$s by %2$s', 'fitcoach' ), 'fitcoach', '<a href="http://modernthemes.net" rel="designer">modernthemes.net</a>' ); */ ?>
-			<?php endif; ?> 
-
+			<?php endif;?> 
+			<!-- links de redes sociales -->
+			<div class="row align-items-start">
+				<div class="col">
+					<h4 class="text-center">Redes EL URBANO</h4>
+					<div class="row align-items-start">
+						<div class="col">
+							<a class="links" href="">
+								<img src="<?=get_template_directory_uri().'/images/facebook.png';?>" alt="">
+							</a>
+						</div>
+						<div class="col">
+							<a class="links" href="">
+								<img src="<?=get_template_directory_uri().'/images/instagram-icon.png';?>" alt="">
+							</a>
+						</div>
+						<div class="col">
+							<a class="links" href="">
+								<img src="<?=get_template_directory_uri().'/images/twitter.png';?>" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h4 class="text-center">Redes PARCHE PEREIRANO</h4>
+					<div class="row align-items-start">
+						<div class="col">
+							<a class="links" href="">
+								<img src="<?=get_template_directory_uri().'/images/facebook.png';?>" alt="">
+							</a>
+						</div>
+						<div class="col">
+							<a class="links" href="">
+								<img src="<?=get_template_directory_uri().'/images/instagram-icon.png';?>" alt="">
+							</a>
+						</div>
+						<div class="col">
+							<a class="links" href="">
+								<img src="<?=get_template_directory_uri().'/images/twitter.png';?>" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 		</div><!-- .site-info -->
 	
     </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

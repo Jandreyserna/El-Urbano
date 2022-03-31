@@ -204,6 +204,9 @@ function fitcoach_scripts() {
 	wp_register_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js', array(), time(), true);
 	wp_enqueue_script('bootstrap-js');
 
+	wp_register_script('jquery-js', get_template_directory_uri().'/js/jquery-3.6.0.min.js', array(), time(), true);
+	wp_enqueue_script('jquery-js');
+
 	/* REgistrar los style y scripts de slider */
 
 	wp_register_style( 'slick-css', get_template_directory_uri().'/css/slick-theme.css', array(), time());
@@ -212,11 +215,16 @@ function fitcoach_scripts() {
 	wp_register_style('slick-style', get_template_directory_uri().'/css/slick.css', array(), time());
 	wp_enqueue_style( 'slick-style' );
 
+	wp_register_script('slick-js', get_template_directory_uri().'/js/slick.min.js', array(), time(), true);
+	wp_enqueue_script('slick-js');
+
 	wp_register_script('slider-js', get_template_directory_uri().'/js/slider.js', array(), time(), true);
 	wp_enqueue_script('slider-js');
 
-	wp_register_script('slick-js', get_template_directory_uri().'/js/slider.js', array(), time(), true);
-	wp_enqueue_script('slick-js');
+	/* registrar hojas de estilo adicionales */
+
+	wp_register_style( 'footer-css', get_template_directory_uri().'/css/footer.css', array(), time());
+    wp_enqueue_style( 'footer-css' );
 
    
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -498,6 +506,19 @@ function be_initialize_cmb_meta_boxes() {
     if ( !class_exists( 'cmb_Meta_Box' ) ) {
         require_once( 'cmb/init.php' );
     }
+}
+
+/*Traer todos los post de un slug  */
+
+function get_post_id_by_name( $post_name, $post_type = 'post' )
+{
+    $post_ids = get_posts(array
+    (
+        'category_name'   => $post_name,
+        'numberposts' => 1,
+    ));
+
+    return  array_shift( $post_ids );
 }
 
 
