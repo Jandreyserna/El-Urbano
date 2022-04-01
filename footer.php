@@ -93,12 +93,12 @@
 					<h4 class="text-center">Redes EL URBANO</h4>
 					<div class="row align-items-start">
 						<div class="col">
-							<a class="links" href="">
-								<img src="<?=get_template_directory_uri().'/images/facebook.png';?>" alt="">
+							<a class="links" href="https://www.facebook.com/ElUrbanoNoticia">
+								<img src="<?=get_template_directory_uri().'/images/facebook.png';?>"  alt="">
 							</a>
 						</div>
 						<div class="col">
-							<a class="links" href="">
+							<a class="links" href="https://www.instagram.com/elurbanoregion/?hl=es">
 								<img src="<?=get_template_directory_uri().'/images/instagram-icon.png';?>" alt="">
 							</a>
 						</div>
@@ -113,12 +113,12 @@
 					<h4 class="text-center">Redes PARCHE PEREIRANO</h4>
 					<div class="row align-items-start">
 						<div class="col">
-							<a class="links" href="">
+							<a class="links" href="https://www.facebook.com/ParchePereirano">
 								<img src="<?=get_template_directory_uri().'/images/facebook.png';?>" alt="">
 							</a>
 						</div>
 						<div class="col">
-							<a class="links" href="">
+							<a class="links" href="https://www.instagram.com/parchepereirano/?hl=es">
 								<img src="<?=get_template_directory_uri().'/images/instagram-icon.png';?>" alt="">
 							</a>
 						</div>

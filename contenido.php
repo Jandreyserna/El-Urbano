@@ -1,5 +1,14 @@
 <div class="card targeta">
-    <?php the_post_thumbnail('large', array('class' => 'fc-post-image')); ?>
+<?php
+				  if(has_post_thumbnail()):
+					the_post_thumbnail(
+					);
+				  else:
+                    
+?>      
+					<img src="<?=get_template_directory_uri().'/images/plantilla.jpg'?>" class="w-100" alt="Card image cap">
+				  <?php 
+                  endif; ?>
     <div class="card-body">
         <h5 class="card-title"><?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?></h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

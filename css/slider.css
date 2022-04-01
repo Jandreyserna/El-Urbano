@@ -1,4 +1,4 @@
-.slider-test{
+/* .slider-test{
     margin-top: 80px;
     margin-bottom: 80px !important;
 }
@@ -11,7 +11,7 @@
 .slick-arrow:before{
     color: #000000;
     font-size: 25px;
-}
+} */
 
 .wpsisac-image-slide-wrap img{
     width: 300px;
@@ -45,4 +45,8 @@
 
 .card-title ul li{
     list-style: none;
+}
+
+.slick-track{
+
 }
