@@ -13,7 +13,13 @@
 
 get_header(); ?>
 
-
+	<div class="publicidad-horizontal">	
+		<h3 class="text-center">Espacio publicitario</h3>
+		<?php 
+		echo do_shortcode('[mostrar_cat cat="7"]');
+		?>
+	</div>
+	<h1 class="text-center">Noticias</h1>
 	<div class="grid grid-pad page-area " style="display: flex;">
 		<div class="contenedor-entradas">
 			<?php if ( have_posts() ) : ?>

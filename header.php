@@ -36,18 +36,30 @@
 <?php 
 wp_head(); 
 $url_image = get_theme_mods( 'fitcoach_logo' );
+			
 ?>
-
-
+	<?php
+	$args = array('exclude' => '-7');
+	$categories = get_categories($args);
+	$posicion = 0;
+		for($a = 0; $a <= sizeof($categories); $a++ ){
+			if(isset($categories[$a]) == TRUE){
+				$categorias[$posicion]= $categories[$a]->slug;
+				$posicion++;
+			}
+		}
+	?>
 </head> 
 <header>
-	<nav class="navegator " style="background:#9F46EE;">
-
-		
+	<nav class="navegator " style="background:#9F46EE;">	
 			<div class="row" style="display: flex">
-				
-					<p class='site-title' style="width: 18%" ><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></p>
-
+					<p class='site-title' style="width: 18%" >
+						<a 
+							href='<?php echo esc_url( home_url( '/' ) ); ?>'
+							title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'
+							rel='home'><?php bloginfo( 'name' ); ?>
+						</a>
+					</p>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
 					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="logo"><img src="<?=$url_image['apple_touch_57']?>" alt="" class="logo"></a>
 					<div class="row justify-content-end">
@@ -61,12 +73,13 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 	</nav>
 </header>	
 <body>
+
 	<h3 class="name-post">¡Ultimas noticias!</h3>
 	<div class="sliders-show">
 		<?php
-		$categories = get_categories();
 		for($i = 0; $i < sizeof($categories); $i++ ):
-			$post =  get_post_id_by_name($categories[$i]->slug);
+
+			$post =  get_post_id_by_name($categorias[$i]);
 		  ?>
 			
 				<div class="card card-slick" style="width: 18rem;">
@@ -97,7 +110,6 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 		  endfor;
 ?>
 	</div>
-	<h3 class="name-post" >¡Ultimas noticias!</h3>
 		
 	
 
