@@ -14,9 +14,13 @@
 get_header(); ?>
 
 	<div class="publicidad-horizontal">	
-		<h3 class="text-center">Espacio publicitario</h3>
 		<?php 
 		echo do_shortcode('[mostrar_cat cat="7"]');
+		?>
+	</div>
+	<div class="video-cabecera">
+		<?php
+			echo do_shortcode('[mostrar_category_name category_name="Video-Cabecera"]');
 		?>
 	</div>
 	<h1 class="text-center">Noticias</h1>

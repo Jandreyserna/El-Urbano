@@ -119,7 +119,7 @@
 						</div>
 						<div class="col">
 							<a class="links" href="https://www.instagram.com/parchepereirano/?hl=es">
-								<img src="<?=get_template_directory_uri().'/images/instagram-icon.png';?>" alt="">
+								<img src="<?=get_template_directory_uri().'/images/Instagram-Icon.png';?>" alt="">
 							</a>
 						</div>
 						<div class="col">

@@ -1,3 +1,13 @@
 .publicidad-horizontal img{
-    width: 100% !important;
+    height: 270px;
+    width: 510px;
+    display: block;
+    margin: auto;
+}
+
+.fecha-post-public{
+    font-size: 15px;
+    color: brown;
+    display: table;
+    margin: auto;
 }

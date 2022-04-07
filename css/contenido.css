@@ -1,0 +1,31 @@
+/*  css de video de cabecera */
+
+.video-cabecera{
+    align-items: center;
+}
+
+.video-cabecera h1, 
+.video-cabecera h2{
+    text-align: center;
+    margin: auto;
+}
+
+.video-cabecera figure{
+    display: table;
+    margin: auto;
+}
+
+.video-cabecera p{
+    font-size: 15px;
+    padding-left: 4%;
+}
+.fecha-post{
+    display: block;
+    margin: auto;
+    color: brown;
+    font-size: 15px;
+}
+
+.entry-content p{
+    font-size: 15px;
+}

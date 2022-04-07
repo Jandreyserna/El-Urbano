@@ -229,6 +229,9 @@ function fitcoach_scripts() {
 	wp_register_style( 'publicidad-css', get_template_directory_uri().'/css/publicidad.css', array(), time());
     wp_enqueue_style( 'publicidad-css' );
 
+	wp_register_style( 'contenido-css', get_template_directory_uri().'/css/contenido.css', array(), time());
+    wp_enqueue_style( 'contenido-css' );
+
    
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -534,6 +537,9 @@ function show_category_posts( $atts ){
         
         while ( have_posts() ){
             the_post();
+?>
+			<span class="entry-date fecha-post-public"><?php echo get_the_date('d/m/Y'); ?></span>
+<?php
 			the_post_thumbnail(
 			);
         }
@@ -543,3 +549,22 @@ function show_category_posts( $atts ){
     wp_reset_query();
 }
 add_shortcode('mostrar_cat', 'show_category_posts');
+
+/* short code para traer el post del ultimo video de cabecera */
+
+function show_category_posts_video( $atts ){
+    $extract=extract(shortcode_atts(array('category_name'=> ''), $atts));
+    query_posts('category_name='.$category_name.'&orderby;=date&order;=ASC&posts_per_page=1');
+    if ( have_posts() ){
+        
+        while ( have_posts() ){
+            the_post();
+			echo the_title('<h1>').'</h1>';
+			the_content();
+        }
+        
+    }
+    //Reset query
+    wp_reset_query();
+}
+add_shortcode('mostrar_category_name', 'show_category_posts_video');

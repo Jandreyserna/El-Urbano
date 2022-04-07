@@ -1,5 +1,5 @@
 
-if(screen.width > 800){
+/* if(screen.width > 800){
   $('.sliders-show').slick({
     
       slidesToShow: 3,
@@ -23,7 +23,7 @@ if(screen.width > 800){
     autoplay: true,
     autoplaySpeed: 2000,
 }); 
-}
+} */
 var x = document.getElementsByClassName("menu-principal-container");
 $('.menu-toggle').click(function(){
   console.log('le di');
@@ -34,5 +34,13 @@ $('.menu-toggle').click(function(){
     x.style.display = "block";
   }
 });
+
+$('.sliders-show').slick({
+    
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+}); 
 
 
