@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-header{
+/* header{
     width: 100%;
     height: 0;
     position: relative;
@@ -16,24 +16,70 @@ header::after{
     content: '';
     width: 100%;
     height: 100%;
-    background: #675AA2;  /* fallback for old browsers */
-    background-image: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    filter: blur(5px);
-    z-index: -1;
+    background: #675AA2; */  /* fallback for old browsers */
+/*     background-image: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* filter: blur(5px);
+    z-index: -1; */
 
 
+header{
+    position: fixed;
+    z-index: 1;
 }
 
-header nav {
-    width: 100%;
+header nav{
+    display: block;
+    position: fixed ;
     z-index: 1;
-    overflow: visibel;
-    margin: 0 auto;
-    height: 66px;
+    width: 100%;
+}
+header nav .navegator{
+    height: 125px;
     position: fixed !important;
     border-bottom: 6px;
+    z-index: 1;
 }
+
+header nav .barra-logo {
+    background:#9F46EE;
+    height: 100px;
+    
+}
+
+header nav .barra-logo a img{
+    display: block;
+    margin: auto;
+}
+
+header nav .menu{
+    background:#675AA2;
+    align-items: center;
+
+}
+
+/* estlos para el menu principal */
+.menu1 .menu-principal-container ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.menu .menu-principal-container ul{
+    display: flex;
+    margin: auto;
+}
+
+.menu .menu-principal-container ul li{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.menu .menu-principal-container ul li a{
+    font-size: 20px;
+}
+
 
 a:link, a:visited, a:active {
     text-decoration:none;
@@ -44,11 +90,8 @@ a:link, a:visited, a:active {
     align-items: center;
 }
 
-.menu-toggle{
-    width: 50px;
-    height: 50px;
-    margin-right: 25px;
-    border-radius: 5px;
+.menu_bar{
+    display: none;
 }
 
 /* clases para contedido de contenido.php */
@@ -125,30 +168,26 @@ a:link, a:visited, a:active {
 .name-post{
     text-align: center ;
 }
-.logo{
-    width: 30px;
-    height: 30px;
-}
 
-.menu-principal-container{
-    width: 64%;
+.menu1 .menu-principal-container{
+    width: 100%;
     align-items: center;
 }
 
-.menu-principal-container ul{
+.menu1 .menu-principal-container ul{
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-.menu-principal-container ul li a{
+.menu1 .menu-principal-container ul li a{
     margin-left: 15px;
     text-decoration: none;
     font-size: 15px;
-    color: white !important;
+    color: rgb(253, 252, 252) !important;
 }
 
-.menu-principal-container ul li a:hover{
+.menu1 .menu-principal-container ul li a:hover{
     margin-left: 40px;
     text-decoration: none;
     font-size: 15px;
@@ -159,22 +198,69 @@ a:link, a:visited, a:active {
     align-items: center;
 }
 
-.logo{
-    width: 180px;
-    height: 60px;
-}
 
-.logo2{
-    display: none;
-}
+@media screen and (max-width: 900px){
+    header nav{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+    }
 
-@media screen and (max-width: 990px){
+    header nav .menu{
+        height: 100%;
+        width: 90%;
+        left: 0;
+        border-radius: 6px;
+        align-items: flex-start !important;
+    }
+
+    header nav .menu .menu1 .menu-principal-container ul{
+        display: block;
+        float: none;
+    }
+
+    header nav .menu .menu1 .menu-principal-container ul li{
+        text-align: left ;
+        display: block;
+        float: none;
+        margin-top: 20px;
+        border-bottom: 1px solid rgba(255,255,255, .3);
+    }
+
+    header nav .menu .menu1 .menu-principal-container ul li a{
+        font-size: 25px;
+    }
+
+    .menu_bar{
+        display: flex;
+        width: 100%;  
+        background: #9F46EE;
+    }
+    
     .site-title{
         display: none;
     }
+    .menu_bar .menu-toggle{
+        display: block;
+        width: 20%;
+        height: 50px;
+        padding: 20px;
+        border: none;
+        margin: auto;
+        background: #9F46EE;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .menu_bar span{
+        font-size: 15px;
 
-    .menu-principal-container{
-        display: none;
     }
 
     .menu-principal-container ul{
@@ -183,15 +269,6 @@ a:link, a:visited, a:active {
         list-style: none;
     }
 
-    .logo{
-        display: none;
-    }
-
-    .logo2{
-        display: block;
-        width: 180px;
-        height: 60px;
-    }
     .navegator .justify-content-end .col-4{
         margin-top: 9px;
     }

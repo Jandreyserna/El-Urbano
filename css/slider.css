@@ -19,7 +19,9 @@
 }
 
 .slick-track{
-    margin-top: 70px;
+    margin: auto;
+    padding-top: 130px;
+
 }
 
 .card-slick{
@@ -45,8 +47,4 @@
 
 .card-title ul li{
     list-style: none;
-}
-
-.slick-track{
-
 }

@@ -14,9 +14,14 @@
 get_header(); ?>
 
 	<div class="publicidad-horizontal">	
-		<h3 class="text-center">Espacio publicitario</h3>
+		<span class="entry-date fecha-post-public"><?php echo get_the_date('d/m/Y'); ?></span>
 		<?php 
 		echo do_shortcode('[mostrar_cat cat="7"]');
+		?>
+	</div>
+	<div class="video-cabecera">
+		<?php
+			echo do_shortcode('[mostrar_category_name category_name="video-cabecera"]');
 		?>
 	</div>
 	<h1 class="text-center">Noticias</h1>

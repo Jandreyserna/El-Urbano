@@ -10,7 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, user-scalable=no , initial-scale=1.0, maximum-scale=1.0, mimimum-scale=1.0">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -51,29 +51,30 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 	?>
 </head> 
 <header>
-	<nav class="navegator " style="background:#9F46EE;">	
-			<div class="row" style="display: flex">
-					<p class='site-title' style="width: 18%" >
-						<a 
-							href='<?php echo esc_url( home_url( '/' ) ); ?>'
-							title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'
-							rel='home'><?php bloginfo( 'name' ); ?>
-						</a>
-					</p>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
-					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="logo"><img src="<?=$url_image['apple_touch_57']?>" alt="" class="logo"></a>
-					<div class="row justify-content-end">
-						<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="logo2"><img src="<?=$url_image['apple_touch_57']?>" alt="" class="logo2"></a>
-						<div class="col-4">
-						<button class="menu-toggle "><?php _e( 'Menu', 'fitcoach' ); ?></button>	
-						</div>
-					</div>
-					
+		
+	
+	<nav class="navegator " >
+		<div class="barra-logo">
+			<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="">
+				<img src="<?=$url_image['apple_touch_57']?>" alt="" class="">
+			</a>
+		</div>
+		<div class="menu_bar">
+			<a class="btn btn-dark menu-toggle">
+				<span class="dashicons dashicons-menu-alt3">Menu</span>
+			</a>
+		</div>
+			
+		<div class="row menu" >
+			<div class="menu1">
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
 			</div>
+								
+		</div>
 	</nav>
 </header>	
 <body>
-
+	
 	<h3 class="name-post">¡Ultimas noticias!</h3>
 	<div class="sliders-show">
 		<?php
@@ -110,6 +111,11 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 		  endfor;
 ?>
 	</div>
+	<div class="collapse multi-collapse" id="multiCollapseExample1">
+		  <div class="menu2">
+		  	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+		  </div>
+    </div>
 		
 	
 
