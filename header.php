@@ -61,7 +61,7 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 		</div>
 		<div class="menu_bar">
 			<a class="btn btn-dark menu-toggle">
-				<span class="dashicons dashicons-menu-alt3">Menu</span>
+				<span class="dashicons dashicons-menu-alt3"></span>
 			</a>
 		</div>
 			
@@ -80,34 +80,40 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 		<?php
 		for($i = 0; $i < sizeof($categories); $i++ ):
 
-			$post =  get_post_id_by_name($categorias[$i]);
-		  ?>
+			if( $categorias[$i] != 'video-cabecera' && $categorias[$i] != 'publicidad' && $categorias[$i] != 'video'){
+				$post =  get_post_id_by_name($categorias[$i]);
+				/* echo "<pre>";
+				print_r( $categorias );
+				echo "</pre>"; */
+		?>
 			
 				<div class="card card-slick" style="width: 18rem;">
 				<?php
-				  if(has_post_thumbnail()):
-					the_post_thumbnail(
-					);
-				  else:
+				
+					if(has_post_thumbnail()):
+						the_post_thumbnail(
+						);
+					else:
 				?>
-					<img src="http://localhost/urbano/wp-content/uploads/2022/01/html5.jpg" class="w-100" alt="Card image cap">
-				  <?php  
-				  endif;
-				  ?>
-					<div class="card-body">
-					<?php
-						// Get the ID of a given category
-						$category_id = get_cat_ID( $categories[$i]->cat_name );
+						<img src="http://localhost/urbano/wp-content/uploads/2022/01/html5.jpg" class="w-100" alt="Card image cap">
+				<?php  
+					endif;
+				?>
+						<div class="card-body">
+						<?php
+							// Get the ID of a given category
+							$category_id = get_cat_ID( $categories[$i]->cat_name );
 
-						// Get the URL of this category
-						$category_link = get_category_link( $category_id );
+							// Get the URL of this category
+							$category_link = get_category_link( $category_id );
 						?>
-						<h5 class="card-title"><?=the_category()?></h5>
-						<p class="card-text"><?=the_excerpt()?></p>
-						<a href="<?=$category_link?>" class="btn btn-primary">ver noticias</a>
+							<h5 class="card-title"><?=the_category()?></h5>
+							<p class="card-text"><?=the_excerpt()?></p>
+							<a href="<?=$category_link?>" class="btn btn-primary">ver noticias</a>
+						</div>
 					</div>
-			  	</div>
 <?php		
+				}
 		  endfor;
 ?>
 	</div>

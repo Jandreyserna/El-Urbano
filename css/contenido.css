@@ -26,6 +26,22 @@
     font-size: 15px;
 }
 
+.targeta{
+    border-radius: 6px;
+    box-shadow: -2px -3px rgb(255, 168, 255);
+}
+
 .targeta img{
     width: 100% !important;
+    border-radius: 7px;
+}
+
+.targeta .car-body a{
+    border-radius: 6px;
+    background: rgba(61, 18, 65, 0.76) !important;
+}
+
+.targeta .card-body a button{
+    border-radius: 6px;
+    background: rgba(158, 9, 245, 0.76) !important;
 }

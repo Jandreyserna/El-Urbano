@@ -14,7 +14,6 @@
 get_header(); ?>
 
 	<div class="publicidad-horizontal">	
-		<span class="entry-date fecha-post-public"><?php echo get_the_date('d/m/Y'); ?></span>
 		<?php 
 		echo do_shortcode('[mostrar_cat cat="7"]');
 		?>
@@ -41,7 +40,10 @@ get_header(); ?>
 				 while ($query->have_posts() ){
 
 					$query->the_post();
+					$categorias = get_the_category();
+					if( $categorias[0]->name != 'video-cabecera' && $categorias[0]->name != 'publicidad' && $categorias[0]->name != 'video'):
 						get_template_part( 'contenido' );
+					endif;
 					
 				 }
 				 
@@ -56,13 +58,13 @@ get_header(); ?>
 	<?php get_sidebar(); ?>
 	</div><!-- grid -->
 	<!--  videos post  -->
-	<div class="videos-contenedor">
-		<h1>VIDEOS</h1>
+	<div class="videos-contenedor contenedor-entradas">
+		<h1 class="text-center">VIDEOS</h1>
 		<div class="videos">
 			<?php
 			/* argumentos para la consulta */
 			 $arg = array(
-				'category_name'  => 'Video',
+				'category_name'  => 'video',
 			 );
 			 /* consulta personalizada */
 			 $query = new WP_Query( $arg );
@@ -72,6 +74,7 @@ get_header(); ?>
 				 /* obtener los datos mediante un bucle */
 				 while ($query->have_posts() ){
 					$query->the_post();
+					
 					get_template_part( 'content-Videos', get_post_format() );
 				 }
 				 
