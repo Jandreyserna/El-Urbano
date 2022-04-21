@@ -7,7 +7,6 @@ Template Name: Home Page
 
 get_header();
  ?> 
-<h1>hola desde home pages</h1>
 	<div id="sequence"> 
 		<span class="sequence-prev hide-on-mobile" alt="Previous" ><i class="fa fa-angle-left"></i></span>
 		<span class="sequence-next hide-on-mobile" alt="Next" ><i class="fa fa-angle-right"></i></span>

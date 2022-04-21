@@ -25,33 +25,63 @@ get_header(); ?>
 		?>
 	</div>
 	<h1 class="text-center">Noticias</h1>
-	<div class="grid grid-pad page-area " style="display: flex;">
+	<div class="grid grid-pad page-area ">
 		<div class="contenedor-entradas">
-			<?php if ( have_posts() ) : ?>
+			<?php
+			/* argumentos para la consulta */
+			 $arg = array(
+				'author_name' => 'urbano',
+			 );
+			 /* consulta personalizada */
+			 $query = new WP_Query( $arg );
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+			 /* verificar si obtuvimos resultados */
+			 if( $query->have_posts() ) {
+				 /* obtener los datos mediante un bucle */
+				 while ($query->have_posts() ){
 
-					<?php
-					/* Include the Post-Format-specific template for the content.
-					* If you want to override this in a child theme, then include a file
-					* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					*/
-					get_template_part( 'contenido', get_post_format() );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php fitcoach_paging_nav(); ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'content', 'none' ); ?>
-
-			<?php endif; ?>
-		</div>
+					$query->the_post();
+						get_template_part( 'contenido' );
+					
+				 }
+				 
+			 }else{
+				get_template_part( 'content', 'none' );
+			 }
+			 /*  restaurar datos originales de la entrada */
+			 wp_reset_postdata();
+			
+			?>
 
 	<?php get_sidebar(); ?>
 	</div><!-- grid -->
+	<!--  videos post  -->
+	<div class="videos-contenedor">
+		<h1>VIDEOS</h1>
+		<div class="videos">
+			<?php
+			/* argumentos para la consulta */
+			 $arg = array(
+				'category_name'  => 'Video',
+			 );
+			 /* consulta personalizada */
+			 $query = new WP_Query( $arg );
+
+			 /* verificar si obtuvimos resultados */
+			 if( $query->have_posts() ) {
+				 /* obtener los datos mediante un bucle */
+				 while ($query->have_posts() ){
+					$query->the_post();
+					get_template_part( 'content-Videos', get_post_format() );
+				 }
+				 
+			 }
+			 /*  restaurar datos originales de la entrada */
+			 wp_reset_postdata();
+			
+			?>
+		</div>
+		
+	</div>
 	
 	<?php get_footer(); ?>
