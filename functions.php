@@ -208,18 +208,21 @@ function fitcoach_scripts() {
 	wp_enqueue_script('jquery-js');
 
 	/* REgistrar los style y scripts de slider */
-
-	wp_register_style( 'slick-css', get_template_directory_uri().'/css/slick-theme.css', array(), time());
-    wp_enqueue_style( 'slick-css' );
-
-	wp_register_style('slick-style', get_template_directory_uri().'/css/slick.css', array(), time());
-	wp_enqueue_style( 'slick-style' );
-
 	wp_register_script('slick-js', get_template_directory_uri().'/js/slick.min.js', array(), time(), true);
 	wp_enqueue_script('slick-js');
 
 	wp_register_script('slider-js', get_template_directory_uri().'/js/slider.js', array(), time(), true);
 	wp_enqueue_script('slider-js');
+	
+	wp_register_style('slick-style', get_template_directory_uri().'/css/slick.css', array(), time());
+	wp_enqueue_style( 'slick-style' );
+
+	wp_register_style( 'slick-css', get_template_directory_uri().'/css/slick-theme.css', array(), time());
+    wp_enqueue_style( 'slick-css' );
+
+	
+
+	
 
 	wp_register_script('menu-js', get_template_directory_uri().'/js/menu.js', array(), time(), true);
 	wp_enqueue_script('menu-js');

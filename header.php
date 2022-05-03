@@ -38,21 +38,9 @@ wp_head();
 $url_image = get_theme_mods( 'fitcoach_logo' );
 			
 ?>
-	<?php
-	$args = array('exclude' => '-7');
-	$categories = get_categories($args);
-	$posicion = 0;
-		for($a = 0; $a <= sizeof($categories); $a++ ){
-			if(isset($categories[$a]) == TRUE){
-				$categorias[$posicion]= $categories[$a]->slug;
-				$posicion++;
-			}
-		}
-	?>
+	
 </head> 
 <header>
-		
-	
 	<nav class="navegator " >
 		<div class="barra-logo">
 			<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="">
@@ -73,55 +61,7 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 		</div>
 	</nav>
 </header>	
-<body>
-	
-	<h3 class="name-post">¡Ultimas noticias!</h3>
-	<div class="sliders-show">
-		<?php
-		for($i = 0; $i < sizeof($categories); $i++ ):
 
-			if( $categorias[$i] != 'video-cabecera' && $categorias[$i] != 'publicidad' && $categorias[$i] != 'video'){
-				$post =  get_post_id_by_name($categorias[$i]);
-				/* echo "<pre>";
-				print_r( $categorias );
-				echo "</pre>"; */
-		?>
-			
-				<div class="card card-slick" style="width: 18rem;">
-				<?php
-				
-					if(has_post_thumbnail()):
-						the_post_thumbnail(
-						);
-					else:
-				?>
-						<img src="http://localhost/urbano/wp-content/uploads/2022/01/html5.jpg" class="w-100" alt="Card image cap">
-				<?php  
-					endif;
-				?>
-						<div class="card-body">
-						<?php
-							// Get the ID of a given category
-							$category_id = get_cat_ID( $categories[$i]->cat_name );
-
-							// Get the URL of this category
-							$category_link = get_category_link( $category_id );
-						?>
-							<h5 class="card-title"><?=the_category()?></h5>
-							<p class="card-text"><?=the_excerpt()?></p>
-							<a href="<?=$category_link?>" class="btn btn-primary">ver noticias</a>
-						</div>
-					</div>
-<?php		
-				}
-		  endfor;
-?>
-	</div>
-	<div class="collapse multi-collapse" id="multiCollapseExample1">
-		  <div class="menu2">
-		  	<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
-		  </div>
-    </div>
 		
 	
 

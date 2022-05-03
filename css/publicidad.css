@@ -1,6 +1,8 @@
+.publicidad-horizontal{
+    padding-top: 10px;
+}
+
 .publicidad-horizontal img{
-    height: 270px;
-    width: 510px;
     display: block;
     margin: auto;
 }
