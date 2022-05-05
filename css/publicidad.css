@@ -13,3 +13,9 @@
     display: table;
     margin: auto;
 }
+
+@media screen and ( max-width: 900px ) {
+    .publicidad-horizontal{
+        padding-top: 10px;
+    }
+}

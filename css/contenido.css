@@ -25,14 +25,28 @@
     color: brown;
     font-size: 15px;
 }
+/* contenido de la barra izquierda */
+
+.barra-izquierda {
+    width: 29%;
+}
+
+/* contenido barra derecha */
+.barra-derecha{
+    width: 26%;
+}
+
+/* contenido de las targetas */
 
 .targeta{
     border-radius: 6px;
+    height: auto;
     box-shadow: -2px -3px rgb(255, 168, 255);
 }
 
 .targeta img{
     width: 100% !important;
+    height: auto !important;
     border-radius: 7px;
 }
 
@@ -40,8 +54,115 @@
     border-radius: 6px;
     background: rgba(61, 18, 65, 0.76) !important;
 }
+.card-body p {
+    font-size: 15px !important;
+}
 
 .targeta .card-body a button{
     border-radius: 6px;
     background: rgba(158, 9, 245, 0.76) !important;
+}
+
+/* clases para contedido de contenido.php */
+
+.contenedor-entradas{
+    padding-top: 0;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 0%;
+
+}
+
+.page-area{
+    padding-top: 40px !important;
+}
+
+/* responsive pagina de entradas index (contenido) */
+@media screen and (max-width: 1200px){
+    .contenedor-entradas{
+        padding-top: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    
+    }
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .contenedor-entradas{
+        padding-top: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0%;
+    
+    }
+}
+@media screen and (max-width: 800px){
+    .contenedor-entradas{
+        padding-top: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    
+    }
+}
+
+@media screen and (max-width: 700px){
+    .contenedor-entradas{
+        padding-top: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contenedor-entradas{
+        padding-top: 0;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    
+    }
+    .targeta{
+        width: 250px !important;
+        height: auto !important;
+        margin-left: 3px;
+        margin: auto;
+    }
+
+    .targeta img{
+        width: 250px !important;
+        height: 150px;
+        border-radius: 7px;
+    }
+
+    .entry-title{
+        color: #000000;
+        text-decoration: none !important;
+        
+    }
+
+    .entry-title a{
+        font-size: 17px !important;
+        line-height: 11px !important;
+    }
+    
+    .card-body p{
+        height: 10px;
+        max-height: 10px;
+    }
+}
+
+.targeta{
+    width: 30rem;
 }

@@ -9,7 +9,7 @@
 ?>
 
 	</section><!-- #content --> 
-
+</body>
 	<footer id="colophon" class="site-footer" role="contentinfo" style="background: url('<?php echo esc_url( get_theme_mod( 'footer_background', (get_stylesheet_directory_uri() . '/images/footer-bg.png') )); ?>') no-repeat scroll center bottom;"> 
     
     	<div class="grid grid-pad"> 

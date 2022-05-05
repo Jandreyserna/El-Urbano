@@ -40,27 +40,29 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 ?>
 	
 </head> 
-<header>
-	<nav class="navegator " >
-		<div class="barra-logo">
-			<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="">
-				<img src="<?=$url_image['apple_touch_57']?>" alt="" class="">
-			</a>
-		</div>
-		<div class="menu_bar">
-			<a class="btn btn-dark menu-toggle">
-				<span class="dashicons dashicons-menu-alt3"></span>
-			</a>
-		</div>
-			
-		<div class="row menu" >
-			<div class="menu1">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+<body>
+	<header>
+		<nav class="navegator " >
+			<div class="barra-logo">
+				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="">
+					<img src="<?=$url_image['apple_touch_57']?>" alt="" class="">
+				</a>
 			</div>
-								
-		</div>
-	</nav>
-</header>	
+			<div class="menu_bar">
+				<a class="btn btn-dark menu-toggle">
+					<span class="dashicons dashicons-menu-alt3"></span>
+				</a>
+			</div>
+				
+			<div class="row menu" >
+				<div class="menu1">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?> 
+				</div>
+									
+			</div>
+		</nav>
+	</header>	
+
 
 		
 	

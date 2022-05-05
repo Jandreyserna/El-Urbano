@@ -30,14 +30,21 @@ get_header(); ?>
 	</div>
 	<div class="container">
   		<div class="row align-items-start">
-    		<div class="col">
+
+			<div class="col barra-izquierda">
+				<?php
+				get_template_part( 'barra-izquierda');
+				?>
+			</div>
+
+    		<div class="col contenido">
 				<h1 class="text-center">Noticias</h1>
 				<div class="grid grid-pad page-area ">
 					<div class="contenedor-entradas">
 						<?php
 						/* argumentos para la consulta */
 						$arg = array(
-							'author_name' => 'urbano',
+							'category_name' => 'noticia',
 						);
 						/* consulta personalizada */
 						$query = new WP_Query( $arg );
@@ -89,8 +96,16 @@ get_header(); ?>
 						
 					</div>
 				</div><!-- grid pad -->
-			</div><!-- col -->
+			</div><!-- col contenido -->
+
+
+
 		</div><!-- aliniar items -->
+		<div class="col barra-derecha">
+				<?php
+				get_template_part( 'barra-derecha');
+				?>
+		</div> <!-- col derecha -->
 	</div><!-- container -->
 	<div class="miembros">
 		<h1 class="text-center">NUESTRO EQUIPO</h1>

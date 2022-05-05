@@ -67,76 +67,7 @@ a:link, a:visited, a:active {
     display: none;
 }
 
-/* clases para contedido de contenido.php */
 
-.contenedor-entradas{
-    padding-top: 75px;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 10%;
-
-}
-
-/* responsive pagina de entradas index (contenido) */
-@media screen and (max-width: 1130px){
-    .contenedor-entradas{
-        padding-top: 75px;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 5%;
-    
-    }
-}
-
-
-
-@media screen and (max-width: 1000px){
-    .contenedor-entradas{
-        padding-top: 75px;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 18%;
-    
-    }
-}
-@media screen and (max-width: 800px){
-    .contenedor-entradas{
-        padding-top: 75px;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 10%;
-    
-    }
-}
-
-@media screen and (max-width: 700px){
-    .contenedor-entradas{
-        padding-top: 75px;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        margin-left: 3%;
-    
-    }
-}
-
-@media screen and (max-width: 600px){
-    .contenedor-entradas{
-        padding-top: 75px;
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: 15%;
-    
-    }
-}
-.targeta{
-    width: 30rem;
-}
 
 .name-post{
     text-align: center ;
