@@ -36,7 +36,6 @@
 <?php 
 wp_head(); 
 $url_image = get_theme_mods( 'fitcoach_logo' );
-			
 ?>
 	
 </head> 
@@ -45,7 +44,7 @@ $url_image = get_theme_mods( 'fitcoach_logo' );
 		<nav class="navegator " >
 			<div class="barra-logo">
 				<a href='<?php echo esc_url( home_url( '/' ) ); ?>' class="">
-					<img src="<?=$url_image['apple_touch_57']?>" alt="" class="">
+					<img src="<?=$url_image['fitcoach_logo']?>" alt="" class="logo">
 				</a>
 			</div>
 			<div class="menu_bar">

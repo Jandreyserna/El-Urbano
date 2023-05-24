@@ -3,7 +3,6 @@
  * @package fitcoach
  */
 ?>
-
 	<div class="side-pad">
 		<div class="grid home-blog">
 			<div class="col-1-2 home-blog-info">

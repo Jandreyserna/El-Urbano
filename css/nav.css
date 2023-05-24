@@ -24,6 +24,10 @@ header nav .barra-logo a img{
     display: block;
     margin: auto;
 }
+.logo{
+    height: 100%;
+}
+
 
 header nav .menu{
     background:#675AA2;
@@ -207,3 +211,4 @@ a:link, a:visited, a:active {
 		right: 20px;
 	}
 } 
+

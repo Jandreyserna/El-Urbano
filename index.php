@@ -20,12 +20,12 @@ get_header(); ?>
     </div>
 	<div class="publicidad-horizontal">	
 		<?php 
-		echo do_shortcode('[mostrar_cat cat="7"]');
+		echo do_shortcode('[mostrar_category_name category_name="publicidad"]');
 		?>
 	</div>
 	<div class="video-cabecera">
 		<?php
-			echo do_shortcode('[mostrar_category_name category_name="video-cabecera"]');
+			echo do_shortcode('[mostrar_category_name category_name="video-cabezera"]');
 		?>
 	</div>
 	<div class="container">
